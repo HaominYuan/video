@@ -2,7 +2,6 @@ import React from "react";
 import { AbsoluteFill, Audio, Img, Sequence, useVideoConfig } from "remotion";
 
 import { PaginatedCaptions } from "./Captions";
-import { Spectrum } from "./Spectrum";
 import {
     BASE_SIZE,
     CAPTIONS_FONT_SIZE,
@@ -10,13 +9,11 @@ import {
     LINE_HEIGHT,
     LINES_PER_PAGE,
 } from "./constants";
-import { Oscilloscope } from "./Oscilloscope";
 import { FONT_FAMILY } from "./font";
 import { WaitForFonts } from "./WaitForFonts";
 import { AudiogramCompositionSchemaType } from "./schema";
 
-export const Audiogram: React.FC<AudiogramCompositionSchemaType> = ({
-    visualizer,
+export const Audiogram:  React.FC<AudiogramCompositionSchemaType> = ({
     audioFileUrl,
     coverImageUrl,
     titleText,
@@ -35,7 +32,6 @@ export const Audiogram: React.FC<AudiogramCompositionSchemaType> = ({
     }
 
     const audioOffsetInFrames = Math.round(audioOffsetInSeconds * fps);
-    const baseNumberOfSamples = Number(visualizer.numberOfSamples);
 
     const textBoxWidth = width - BASE_SIZE * 2;
 
@@ -81,28 +77,6 @@ export const Audiogram: React.FC<AudiogramCompositionSchemaType> = ({
                             {titleText}
                         </div>
                     </div>
-                    {/* <div>
-                        {visualizer.type === "oscilloscope" ? (
-                            <Oscilloscope
-                                waveColor={visualizer.color}
-                                padding={visualizer.padding}
-                                audioSrc={audioFileUrl}
-                                numberOfSamples={baseNumberOfSamples}
-                                windowInSeconds={visualizer.windowInSeconds}
-                                posterization={visualizer.posterization}
-                                amplitude={visualizer.amplitude}
-                            />
-                        ) : visualizer.type === "spectrum" ? (
-                            <Spectrum
-                                barColor={visualizer.color}
-                                audioSrc={audioFileUrl}
-                                mirrorWave={visualizer.mirrorWave}
-                                numberOfSamples={baseNumberOfSamples * 4} // since fft is used, we need to increase the number of samples to get a better resolution
-                                freqRangeStartIndex={visualizer.freqRangeStartIndex}
-                                waveLinesToDisplay={visualizer.linesToDisplay}
-                            />
-                        ) : null}
-                    </div> */}
                     <WaitForFonts>
                         <div
                             style={{

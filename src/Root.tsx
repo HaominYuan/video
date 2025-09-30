@@ -26,16 +26,6 @@ export const RemotionRoot: React.FC = () => {
                 captionsFileName: staticFile("captions.json"),
                 onlyDisplayCurrentSentence: false,
                 captionsTextColor: "rgba(255, 255, 255, 0.93)",
-                // visualizer settings
-                visualizer: {
-                    type: "oscilloscope",
-                    color: "#F4B941",
-                    numberOfSamples: "64" as const,
-                    windowInSeconds: 0.1,
-                    posterization: 3,
-                    amplitude: 4,
-                    padding: 50,
-                },
             }}
             // Determine the length of the video based on the duration of the audio file
             calculateMetadata={async ({ props }) => {
