@@ -4,6 +4,7 @@ import React, { useMemo } from "react";
 import { Caption } from "@remotion/captions";
 import { msToFrame } from "../helpers/ms-to-frame";
 
+// 这个类主要是展示字符的动画效果
 export const Word: React.FC<{
     readonly item: Caption;
     readonly frame: number;
@@ -35,7 +36,7 @@ export const Word: React.FC<{
             display: "inline-block",
             whiteSpace: "pre",
             opacity,
-            translate: `0 ${translateY}em`,
+            // translate: `0 ${translateY}em`,
             color: transcriptionColor,
         };
     }, [opacity, transcriptionColor, translateY]);

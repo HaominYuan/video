@@ -13,7 +13,7 @@ import { FONT_FAMILY } from "./font";
 import { WaitForFonts } from "./WaitForFonts";
 import { AudiogramCompositionSchemaType } from "./schema";
 
-export const Audiogram:  React.FC<AudiogramCompositionSchemaType> = ({
+export const Audiogram: React.FC<AudiogramCompositionSchemaType> = ({
     audioFileUrl,
     coverImageUrl,
     titleText,
@@ -23,6 +23,7 @@ export const Audiogram:  React.FC<AudiogramCompositionSchemaType> = ({
     audioOffsetInSeconds,
     captions,
 }) => {
+    // 获取这个ID视频的参数
     const { durationInFrames, fps, width } = useVideoConfig();
 
     if (!captions) {
@@ -31,13 +32,29 @@ export const Audiogram:  React.FC<AudiogramCompositionSchemaType> = ({
         );
     }
 
+    // 计算视频的偏移量
     const audioOffsetInFrames = Math.round(audioOffsetInSeconds * fps);
 
+    // 文本框大小
     const textBoxWidth = width - BASE_SIZE * 2;
 
     return (
+        // 下面这个style是等同于AbsoluteFill的
+        // const style: React.CSSProperties = {
+        //     position: 'absolute',
+        //     top: 0,
+        //     left: 0,
+        //     right: 0,
+        //     bottom: 0,
+        //     width: '100%',
+        //     height: '100%',
+        //     display: 'flex',
+        //     flexDirection: 'column',
+        // };
         <AbsoluteFill>
+            {/* 这里的from是指这个组件从第几帧开始渲染 用于设置从音频的第几帧开始播放 不需要剪切视频了 */}
             <Sequence from={-audioOffsetInFrames}>
+                {/* 播放音频 */}
                 <Audio pauseWhenBuffering src={audioFileUrl} />
                 <div
                     style={{
@@ -77,7 +94,10 @@ export const Audiogram:  React.FC<AudiogramCompositionSchemaType> = ({
                             {titleText}
                         </div>
                     </div>
+
+                    {/* 加载字体 现在可以暂时不管，仅仅是一个加载字体的套件*/}
                     <WaitForFonts>
+                        {/* 文本框内设置 */}
                         <div
                             style={{
                                 lineHeight: `${LINE_HEIGHT}px`,
@@ -100,6 +120,7 @@ export const Audiogram:  React.FC<AudiogramCompositionSchemaType> = ({
                     </WaitForFonts>
                 </div>
             </Sequence>
+
         </AbsoluteFill>
     );
 };
