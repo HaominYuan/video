@@ -45,12 +45,14 @@ export const PaginatedCaptions: React.FC<{
 }) => {
         const frame = useCurrentFrame();
         const windowRef = useRef<HTMLDivElement>(null);
+        // 这里的start和end整个视频的开始和结束
         const windowedFrameSubs = useWindowedFrameCaptions({
             captions,
             windowStart: startFrame,
             windowEnd: endFrame,
         });
 
+        // 主要是获取当前句子，如果不仅仅要当前句子，就获得整段文字
         const currentSentence = useMemo(() => {
             return getSentenceToDisplay({
                 frame,
@@ -78,13 +80,14 @@ export const PaginatedCaptions: React.FC<{
                 style={{
                     position: "relative",
                     overflow: "hidden",
-                    paddingBottom: "20px",
+                    paddingBottom: "10x",
                 }}
             >
-                <div ref={windowRef}>
+                <div ref={windowRef} style={{ color: transcriptionColor }}>
                     {currentlyShownLines.map((line) => (
                         <div key={line.map((item) => item.text).join(" ")}>
                             {line.map((item) => (
+                                // item.text
                                 <span
                                     key={item.startMs + item.endMs}
                                     id={String(item.startMs + item.endMs)}

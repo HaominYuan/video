@@ -56,12 +56,18 @@ export const filterCurrentlyDisplayedLines = ({
     lines: Caption[][];
     frame: number;
 }) => {
+    // 这个是对的
     const currentlyActiveLines = lines.filter((line) => {
         return line.some((item) => {
             return msToFrame(item.startMs) < frame;
         });
     });
 
-    // Return the last 4 lines
-    return currentlyActiveLines.slice(-LINES_PER_PAGE);
+    const length = currentlyActiveLines.length;
+
+
+    return currentlyActiveLines.slice(-length % LINES_PER_PAGE - 1);
+    // Return the last LINES_PER_PAGE lines
+    // return currentlyActiveLines.slice(-LINES_PER_PAGE);
 };
+

@@ -16,14 +16,16 @@ export const RemotionRoot: React.FC = () => {
             defaultProps={{
                 // audio settings
                 audioOffsetInSeconds: 0,
-                audioFileUrl: staticFile("audio.wav"),
+                // audioFileUrl: staticFile("audio.wav"),
+                audioFileUrl: staticFile("test.mp3"),
                 // podcast data
                 coverImageUrl: staticFile("podcast-cover.jpeg"),
-                titleText: "Ep 550 - Supper Club × Remotion React",
-                titleColor: "rgba(186, 186, 186, 0.93)",
+                titleText: "日本科学家诺贝尔奖数量亚洲第一，可能与哪些因素有关？",
+                titleColor: "rgba(245, 186, 66, 0.93)",
                 // captions settings
                 captions: null,
-                captionsFileName: staticFile("captions.json"),
+                // captionsFileName: staticFile("captions.json"),
+                captionsFileName: staticFile("example.json"),
                 onlyDisplayCurrentSentence: false,
                 captionsTextColor: "rgba(255, 255, 255, 0.93)",
             }}
@@ -41,6 +43,7 @@ export const RemotionRoot: React.FC = () => {
                     },
                 });
 
+                
                 // 返回视频的长度和一些参数
                 return {
                     durationInFrames: Math.floor(

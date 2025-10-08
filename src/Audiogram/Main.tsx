@@ -75,20 +75,19 @@ export const Audiogram: React.FC<AudiogramCompositionSchemaType> = ({
                             alignItems: "center",
                         }}
                     >
-                        <Img
+                        {/* <Img
                             style={{
                                 borderRadius: "6px",
                                 maxHeight: "250px",
                             }}
                             src={coverImageUrl}
-                        />
+                        /> */}
                         <div
                             style={{
-                                marginLeft: "48px",
                                 lineHeight: "1.25",
                                 fontWeight: 800,
                                 color: titleColor,
-                                fontSize: "48px",
+                                fontSize: "72px",
                             }}
                         >
                             {titleText}
@@ -104,7 +103,10 @@ export const Audiogram: React.FC<AudiogramCompositionSchemaType> = ({
                                 width: textBoxWidth,
                                 fontWeight: CAPTIONS_FONT_WEIGHT,
                                 fontSize: CAPTIONS_FONT_SIZE,
-                                marginTop: BASE_SIZE * 0.5,
+                                marginTop: BASE_SIZE,
+                                display: "flex",
+                                flexDirection: "column",
+                                justifyContent: "center",
                             }}
                         >
                             <PaginatedCaptions

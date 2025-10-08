@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, Fragment } from "react";
 import { delayRender, continueRender, cancelRender } from "remotion";
 import { waitForFonts } from "./font";
 
@@ -32,5 +32,5 @@ export const WaitForFonts: React.FC<{
         return null;
     }
 
-    return <>{children}</>;
+    return <Fragment>{children}</Fragment>
 };
