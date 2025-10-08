@@ -1,5 +1,5 @@
 import React from "react";
-import { AbsoluteFill, Audio, Img, Sequence, useVideoConfig } from "remotion";
+import { AbsoluteFill, Audio, Sequence, useVideoConfig } from "remotion";
 
 import { PaginatedCaptions } from "./Captions";
 import {
@@ -15,7 +15,6 @@ import { AudiogramCompositionSchemaType } from "./schema";
 
 export const Audiogram: React.FC<AudiogramCompositionSchemaType> = ({
     audioFileUrl,
-    coverImageUrl,
     titleText,
     titleColor,
     captionsTextColor,
@@ -52,8 +51,37 @@ export const Audiogram: React.FC<AudiogramCompositionSchemaType> = ({
         //     flexDirection: 'column',
         // };
         <AbsoluteFill>
+            <Sequence durationInFrames={1 * fps}>
+                <div
+                    style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        justifyContent: "center",
+                        alignItems: "center",
+                        width: "100%",
+                        height: "100%",
+                        padding: "48px",
+                        backgroundColor: "white",
+                        fontFamily: FONT_FAMILY,
+                    }}
+                >
+                    <div
+                        style={{
+                            width: "50%",
+                            lineHeight: "1.25",
+                            fontWeight: 800,
+                            color: titleColor,
+                            fontSize: "108px",
+                        }}
+                    >
+                        {titleText}
+                    </div>
+                </div>
+            </Sequence >
+
+
             {/* 这里的from是指这个组件从第几帧开始渲染 用于设置从音频的第几帧开始播放 不需要剪切视频了 */}
-            <Sequence from={-audioOffsetInFrames}>
+            <Sequence from={1 * fps}>
                 {/* 播放音频 */}
                 <Audio pauseWhenBuffering src={audioFileUrl} />
                 <div
@@ -62,9 +90,8 @@ export const Audiogram: React.FC<AudiogramCompositionSchemaType> = ({
                         flexDirection: "column",
                         width: "100%",
                         height: "100%",
-                        color: "white",
                         padding: "48px",
-                        backgroundColor: "black",
+                        backgroundColor: "white",
                         fontFamily: FONT_FAMILY,
                     }}
                 >

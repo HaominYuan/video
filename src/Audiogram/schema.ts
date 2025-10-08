@@ -4,8 +4,6 @@ import { Caption } from "@remotion/captions";
 
 
 export const audiogramSchema = z.object({
-    // podcast data
-    coverImageUrl: z.string(),
     titleText: z.string(),
     titleColor: zColor(),
     // captions settings

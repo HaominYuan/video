@@ -1,0 +1,1712 @@
+[
+  {
+    "text": "作者",
+    "startMs": 50,
+    "endMs": 512
+  },
+  {
+    "text": "洋海",
+    "startMs": 725,
+    "endMs": 1250
+  },
+  {
+    "text": "江川",
+    "startMs": 1262,
+    "endMs": 1737
+  },
+  {
+    "text": "来源",
+    "startMs": 2312,
+    "endMs": 2850
+  },
+  {
+    "text": "知乎",
+    "startMs": 3087,
+    "endMs": 3575
+  },
+  {
+    "text": "以",
+    "startMs": 4125,
+    "endMs": 4287
+  },
+  {
+    "text": "我",
+    "startMs": 4287,
+    "endMs": 4475
+  },
+  {
+    "text": "在",
+    "startMs": 4475,
+    "endMs": 4650
+  },
+  {
+    "text": "日本",
+    "startMs": 4662,
+    "endMs": 5000
+  },
+  {
+    "text": "任教",
+    "startMs": 5012,
+    "endMs": 5487
+  },
+  {
+    "text": "的",
+    "startMs": 5487,
+    "endMs": 5587
+  },
+  {
+    "text": "经历",
+    "startMs": 5600,
+    "endMs": 5987
+  },
+  {
+    "text": "看",
+    "startMs": 5987,
+    "endMs": 6287
+  },
+  {
+    "text": "日本",
+    "startMs": 6850,
+    "endMs": 7175
+  },
+  {
+    "text": "这边",
+    "startMs": 7187,
+    "endMs": 7512
+  },
+  {
+    "text": "的",
+    "startMs": 7512,
+    "endMs": 7612
+  },
+  {
+    "text": "研究",
+    "startMs": 7625,
+    "endMs": 8074
+  },
+  {
+    "text": "和",
+    "startMs": 8200,
+    "endMs": 8400
+  },
+  {
+    "text": "国内",
+    "startMs": 8412,
+    "endMs": 8775
+  },
+  {
+    "text": "有",
+    "startMs": 8800,
+    "endMs": 8950
+  },
+  {
+    "text": "很",
+    "startMs": 8950,
+    "endMs": 9225
+  },
+  {
+    "text": "大",
+    "startMs": 9225,
+    "endMs": 9425
+  },
+  {
+    "text": "的",
+    "startMs": 9425,
+    "endMs": 9487
+  },
+  {
+    "text": "不同",
+    "startMs": 9500,
+    "endMs": 9837
+  },
+  {
+    "text": "1",
+    "startMs": 10412,
+    "endMs": 10675
+  },
+  {
+    "text": "研究",
+    "startMs": 11037,
+    "endMs": 11362
+  },
+  {
+    "text": "人员",
+    "startMs": 11375,
+    "endMs": 11737
+  },
+  {
+    "text": "超",
+    "startMs": 11750,
+    "endMs": 12062
+  },
+  {
+    "text": "高",
+    "startMs": 12062,
+    "endMs": 12262
+  },
+  {
+    "text": "的",
+    "startMs": 12262,
+    "endMs": 12375
+  },
+  {
+    "text": "稳定性",
+    "startMs": 12387,
+    "endMs": 12987
+  },
+  {
+    "text": "这个",
+    "startMs": 13287,
+    "endMs": 13562
+  },
+  {
+    "text": "稳定性",
+    "startMs": 13575,
+    "endMs": 14187
+  },
+  {
+    "text": "分为",
+    "startMs": 14312,
+    "endMs": 14650
+  },
+  {
+    "text": "三个",
+    "startMs": 14675,
+    "endMs": 15025
+  },
+  {
+    "text": "方面",
+    "startMs": 15037,
+    "endMs": 15400
+  },
+  {
+    "text": "一",
+    "startMs": 15975,
+    "endMs": 16187
+  },
+  {
+    "text": "是",
+    "startMs": 16187,
+    "endMs": 16462
+  },
+  {
+    "text": "拿",
+    "startMs": 16575,
+    "endMs": 16775
+  },
+  {
+    "text": "到",
+    "startMs": 16775,
+    "endMs": 16962
+  },
+  {
+    "text": "终身",
+    "startMs": 16975,
+    "endMs": 17387
+  },
+  {
+    "text": "岗",
+    "startMs": 17387,
+    "endMs": 17575
+  },
+  {
+    "text": "的",
+    "startMs": 17575,
+    "endMs": 17650
+  },
+  {
+    "text": "研究者",
+    "startMs": 17662,
+    "endMs": 18275
+  },
+  {
+    "text": "往后",
+    "startMs": 18525,
+    "endMs": 18875
+  },
+  {
+    "text": "再也没有",
+    "startMs": 18900,
+    "endMs": 19562
+  },
+  {
+    "text": "什么",
+    "startMs": 19575,
+    "endMs": 19837
+  },
+  {
+    "text": "考核",
+    "startMs": 19937,
+    "endMs": 20425
+  },
+  {
+    "text": "一",
+    "startMs": 20437,
+    "endMs": 20562
+  },
+  {
+    "text": "说",
+    "startMs": 20562,
+    "endMs": 20812
+  },
+  {
+    "text": "你",
+    "startMs": 21362,
+    "endMs": 21562
+  },
+  {
+    "text": "愿意",
+    "startMs": 21562,
+    "endMs": 21875
+  },
+  {
+    "text": "搞",
+    "startMs": 21900,
+    "endMs": 22075
+  },
+  {
+    "text": "研究",
+    "startMs": 22087,
+    "endMs": 22525
+  },
+  {
+    "text": "就",
+    "startMs": 22637,
+    "endMs": 22850
+  },
+  {
+    "text": "搞",
+    "startMs": 22850,
+    "endMs": 23037
+  },
+  {
+    "text": "研究",
+    "startMs": 23037,
+    "endMs": 23450
+  },
+  {
+    "text": "不",
+    "startMs": 23687,
+    "endMs": 23862
+  },
+  {
+    "text": "愿意",
+    "startMs": 23862,
+    "endMs": 24175
+  },
+  {
+    "text": "搞",
+    "startMs": 24187,
+    "endMs": 24387
+  },
+  {
+    "text": "就",
+    "startMs": 24387,
+    "endMs": 24500
+  },
+  {
+    "text": "不",
+    "startMs": 24512,
+    "endMs": 24625
+  },
+  {
+    "text": "搞",
+    "startMs": 24625,
+    "endMs": 24875
+  },
+  {
+    "text": "想",
+    "startMs": 25425,
+    "endMs": 25675
+  },
+  {
+    "text": "发",
+    "startMs": 25675,
+    "endMs": 25812
+  },
+  {
+    "text": "论文",
+    "startMs": 25825,
+    "endMs": 26150
+  },
+  {
+    "text": "就",
+    "startMs": 26162,
+    "endMs": 26350
+  },
+  {
+    "text": "发",
+    "startMs": 26350,
+    "endMs": 26550
+  },
+  {
+    "text": "不想",
+    "startMs": 26775,
+    "endMs": 27125
+  },
+  {
+    "text": "发",
+    "startMs": 27125,
+    "endMs": 27262
+  },
+  {
+    "text": "就",
+    "startMs": 27287,
+    "endMs": 27425
+  },
+  {
+    "text": "不",
+    "startMs": 27425,
+    "endMs": 27612
+  },
+  {
+    "text": "发",
+    "startMs": 27612,
+    "endMs": 27850
+  },
+  {
+    "text": "反正",
+    "startMs": 28400,
+    "endMs": 28762
+  },
+  {
+    "text": "拿",
+    "startMs": 28787,
+    "endMs": 28975
+  },
+  {
+    "text": "钱",
+    "startMs": 28975,
+    "endMs": 29175
+  },
+  {
+    "text": "都",
+    "startMs": 29187,
+    "endMs": 29350
+  },
+  {
+    "text": "一样",
+    "startMs": 29350,
+    "endMs": 29637
+  },
+  {
+    "text": "工作",
+    "startMs": 29825,
+    "endMs": 30225
+  },
+  {
+    "text": "都",
+    "startMs": 30237,
+    "endMs": 30450
+  },
+  {
+    "text": "一个",
+    "startMs": 30450,
+    "endMs": 30725
+  },
+  {
+    "text": "日程表",
+    "startMs": 30737,
+    "endMs": 31350
+  },
+  {
+    "text": "结果",
+    "startMs": 31925,
+    "endMs": 32225
+  },
+  {
+    "text": "就",
+    "startMs": 32237,
+    "endMs": 32400
+  },
+  {
+    "text": "是",
+    "startMs": 32400,
+    "endMs": 32750
+  },
+  {
+    "text": "有人",
+    "startMs": 32862,
+    "endMs": 33175
+  },
+  {
+    "text": "愿意",
+    "startMs": 33187,
+    "endMs": 33525
+  },
+  {
+    "text": "做",
+    "startMs": 33525,
+    "endMs": 33700
+  },
+  {
+    "text": "一些",
+    "startMs": 33700,
+    "endMs": 33962
+  },
+  {
+    "text": "非常",
+    "startMs": 33987,
+    "endMs": 34400
+  },
+  {
+    "text": "非常",
+    "startMs": 34412,
+    "endMs": 34725
+  },
+  {
+    "text": "小众",
+    "startMs": 34737,
+    "endMs": 35162
+  },
+  {
+    "text": "的",
+    "startMs": 35162,
+    "endMs": 35237
+  },
+  {
+    "text": "方向",
+    "startMs": 35250,
+    "endMs": 35575
+  },
+  {
+    "text": "而且",
+    "startMs": 35750,
+    "endMs": 36037
+  },
+  {
+    "text": "一",
+    "startMs": 36050,
+    "endMs": 36225
+  },
+  {
+    "text": "做",
+    "startMs": 36225,
+    "endMs": 36375
+  },
+  {
+    "text": "一辈子",
+    "startMs": 36387,
+    "endMs": 36962
+  },
+  {
+    "text": "二",
+    "startMs": 37537,
+    "endMs": 37787
+  },
+  {
+    "text": "是",
+    "startMs": 37787,
+    "endMs": 38100
+  },
+  {
+    "text": "哪怕",
+    "startMs": 38212,
+    "endMs": 38625
+  },
+  {
+    "text": "你",
+    "startMs": 38625,
+    "endMs": 38737
+  },
+  {
+    "text": "没",
+    "startMs": 38737,
+    "endMs": 38900
+  },
+  {
+    "text": "拿",
+    "startMs": 38912,
+    "endMs": 39075
+  },
+  {
+    "text": "到",
+    "startMs": 39075,
+    "endMs": 39200
+  },
+  {
+    "text": "终身",
+    "startMs": 39212,
+    "endMs": 39575
+  },
+  {
+    "text": "岗",
+    "startMs": 39575,
+    "endMs": 39750
+  },
+  {
+    "text": "只要",
+    "startMs": 40062,
+    "endMs": 40362
+  },
+  {
+    "text": "你",
+    "startMs": 40375,
+    "endMs": 40537
+  },
+  {
+    "text": "想",
+    "startMs": 40537,
+    "endMs": 40762
+  },
+  {
+    "text": "你",
+    "startMs": 41075,
+    "endMs": 41187
+  },
+  {
+    "text": "就",
+    "startMs": 41187,
+    "endMs": 41312
+  },
+  {
+    "text": "一定",
+    "startMs": 41325,
+    "endMs": 41787
+  },
+  {
+    "text": "能",
+    "startMs": 41787,
+    "endMs": 41937
+  },
+  {
+    "text": "搞",
+    "startMs": 41937,
+    "endMs": 42112
+  },
+  {
+    "text": "研究",
+    "startMs": 42125,
+    "endMs": 42537
+  },
+  {
+    "text": "比如",
+    "startMs": 43112,
+    "endMs": 43537
+  },
+  {
+    "text": "A",
+    "startMs": 43637,
+    "endMs": 43850
+  },
+  {
+    "text": "学校",
+    "startMs": 43850,
+    "endMs": 44300
+  },
+  {
+    "text": "干",
+    "startMs": 44325,
+    "endMs": 44500
+  },
+  {
+    "text": "两年",
+    "startMs": 44500,
+    "endMs": 44825
+  },
+  {
+    "text": "去",
+    "startMs": 44825,
+    "endMs": 45025
+  },
+  {
+    "text": "B",
+    "startMs": 45037,
+    "endMs": 45225
+  },
+  {
+    "text": "学校",
+    "startMs": 45237,
+    "endMs": 45662
+  },
+  {
+    "text": "然后",
+    "startMs": 45975,
+    "endMs": 46312
+  },
+  {
+    "text": "两年",
+    "startMs": 46337,
+    "endMs": 46687
+  },
+  {
+    "text": "后",
+    "startMs": 46687,
+    "endMs": 46937
+  },
+  {
+    "text": "再",
+    "startMs": 46950,
+    "endMs": 47125
+  },
+  {
+    "text": "去",
+    "startMs": 47125,
+    "endMs": 47300
+  },
+  {
+    "text": "C",
+    "startMs": 47300,
+    "endMs": 47550
+  },
+  {
+    "text": "甚至",
+    "startMs": 48100,
+    "endMs": 48487
+  },
+  {
+    "text": "干",
+    "startMs": 48512,
+    "endMs": 48737
+  },
+  {
+    "text": "着",
+    "startMs": 48737,
+    "endMs": 48837
+  },
+  {
+    "text": "干",
+    "startMs": 48850,
+    "endMs": 49075
+  },
+  {
+    "text": "着",
+    "startMs": 49075,
+    "endMs": 49300
+  },
+  {
+    "text": "去",
+    "startMs": 49412,
+    "endMs": 49662
+  },
+  {
+    "text": "企业",
+    "startMs": 49662,
+    "endMs": 50037
+  },
+  {
+    "text": "接着",
+    "startMs": 50062,
+    "endMs": 50400
+  },
+  {
+    "text": "干",
+    "startMs": 50400,
+    "endMs": 50600
+  },
+  {
+    "text": "干",
+    "startMs": 50837,
+    "endMs": 51075
+  },
+  {
+    "text": "完",
+    "startMs": 51075,
+    "endMs": 51362
+  },
+  {
+    "text": "再",
+    "startMs": 51475,
+    "endMs": 51700
+  },
+  {
+    "text": "去",
+    "startMs": 51700,
+    "endMs": 51900
+  },
+  {
+    "text": "D",
+    "startMs": 51900,
+    "endMs": 52125
+  },
+  {
+    "text": "学校",
+    "startMs": 52125,
+    "endMs": 52600
+  },
+  {
+    "text": "等等",
+    "startMs": 52612,
+    "endMs": 53000
+  },
+  {
+    "text": "他们",
+    "startMs": 53575,
+    "endMs": 53837
+  },
+  {
+    "text": "的",
+    "startMs": 53837,
+    "endMs": 53962
+  },
+  {
+    "text": "年龄",
+    "startMs": 53987,
+    "endMs": 54250
+  },
+  {
+    "text": "焦虑",
+    "startMs": 54262,
+    "endMs": 54612
+  },
+  {
+    "text": "或者",
+    "startMs": 54737,
+    "endMs": 55100
+  },
+  {
+    "text": "职业",
+    "startMs": 55112,
+    "endMs": 55437
+  },
+  {
+    "text": "路径",
+    "startMs": 55437,
+    "endMs": 55862
+  },
+  {
+    "text": "相对",
+    "startMs": 55975,
+    "endMs": 56362
+  },
+  {
+    "text": "来说",
+    "startMs": 56362,
+    "endMs": 56750
+  },
+  {
+    "text": "没",
+    "startMs": 56862,
+    "endMs": 57112
+  },
+  {
+    "text": "那么",
+    "startMs": 57112,
+    "endMs": 57300
+  },
+  {
+    "text": "有",
+    "startMs": 57312,
+    "endMs": 57500
+  },
+  {
+    "text": "压力",
+    "startMs": 57500,
+    "endMs": 57900
+  },
+  {
+    "text": "三",
+    "startMs": 58462,
+    "endMs": 58762
+  },
+  {
+    "text": "是",
+    "startMs": 58762,
+    "endMs": 58937
+  },
+  {
+    "text": "超",
+    "startMs": 58950,
+    "endMs": 59212
+  },
+  {
+    "text": "高",
+    "startMs": 59212,
+    "endMs": 59362
+  },
+  {
+    "text": "的",
+    "startMs": 59362,
+    "endMs": 59450
+  },
+  {
+    "text": "社会福利",
+    "startMs": 59475,
+    "endMs": 60100
+  },
+  {
+    "text": "制度",
+    "startMs": 60112,
+    "endMs": 60425
+  },
+  {
+    "text": "就",
+    "startMs": 60625,
+    "endMs": 60812
+  },
+  {
+    "text": "比如",
+    "startMs": 60825,
+    "endMs": 61125
+  },
+  {
+    "text": "大病",
+    "startMs": 61150,
+    "endMs": 61537
+  },
+  {
+    "text": "上限",
+    "startMs": 61550,
+    "endMs": 61900
+  },
+  {
+    "text": "对",
+    "startMs": 62187,
+    "endMs": 62362
+  },
+  {
+    "text": "底层",
+    "startMs": 62375,
+    "endMs": 62725
+  },
+  {
+    "text": "人",
+    "startMs": 62725,
+    "endMs": 62887
+  },
+  {
+    "text": "相当于",
+    "startMs": 62912,
+    "endMs": 63387
+  },
+  {
+    "text": "免费",
+    "startMs": 63400,
+    "endMs": 63825
+  },
+  {
+    "text": "医疗",
+    "startMs": 63825,
+    "endMs": 64175
+  },
+  {
+    "text": "导致",
+    "startMs": 64474,
+    "endMs": 64800
+  },
+  {
+    "text": "根本",
+    "startMs": 64837,
+    "endMs": 65111
+  },
+  {
+    "text": "不",
+    "startMs": 65111,
+    "endMs": 65212
+  },
+  {
+    "text": "存在",
+    "startMs": 65212,
+    "endMs": 65512
+  },
+  {
+    "text": "失败",
+    "startMs": 65525,
+    "endMs": 65975
+  },
+  {
+    "text": "就",
+    "startMs": 66000,
+    "endMs": 66175
+  },
+  {
+    "text": "自身难保",
+    "startMs": 66175,
+    "endMs": 66900
+  },
+  {
+    "text": "的",
+    "startMs": 66900,
+    "endMs": 66962
+  },
+  {
+    "text": "情况",
+    "startMs": 66975,
+    "endMs": 67387
+  },
+  {
+    "text": "比如",
+    "startMs": 67950,
+    "endMs": 68212
+  },
+  {
+    "text": "我",
+    "startMs": 68225,
+    "endMs": 68362
+  },
+  {
+    "text": "肛",
+    "startMs": 68362,
+    "endMs": 68575
+  },
+  {
+    "text": "瘘",
+    "startMs": 68575,
+    "endMs": 68712
+  },
+  {
+    "text": "手术",
+    "startMs": 68725,
+    "endMs": 69162
+  },
+  {
+    "text": "报销",
+    "startMs": 69362,
+    "endMs": 69787
+  },
+  {
+    "text": "后",
+    "startMs": 69787,
+    "endMs": 69950
+  },
+  {
+    "text": "一个月",
+    "startMs": 69975,
+    "endMs": 70412
+  },
+  {
+    "text": "花",
+    "startMs": 70525,
+    "endMs": 70762
+  },
+  {
+    "text": "了",
+    "startMs": 70762,
+    "endMs": 70862
+  },
+  {
+    "text": "超过",
+    "startMs": 70875,
+    "endMs": 71275
+  },
+  {
+    "text": "四万日元",
+    "startMs": 71300,
+    "endMs": 72137
+  },
+  {
+    "text": "医院",
+    "startMs": 72712,
+    "endMs": 73087
+  },
+  {
+    "text": "把",
+    "startMs": 73100,
+    "endMs": 73225
+  },
+  {
+    "text": "单子",
+    "startMs": 73237,
+    "endMs": 73612
+  },
+  {
+    "text": "寄",
+    "startMs": 73625,
+    "endMs": 73787
+  },
+  {
+    "text": "到",
+    "startMs": 73787,
+    "endMs": 73912
+  },
+  {
+    "text": "学校",
+    "startMs": 73925,
+    "endMs": 74387
+  },
+  {
+    "text": "学校",
+    "startMs": 74675,
+    "endMs": 75012
+  },
+  {
+    "text": "一",
+    "startMs": 75025,
+    "endMs": 75150
+  },
+  {
+    "text": "看",
+    "startMs": 75150,
+    "endMs": 75425
+  },
+  {
+    "text": "说",
+    "startMs": 75537,
+    "endMs": 75725
+  },
+  {
+    "text": "我",
+    "startMs": 75725,
+    "endMs": 75825
+  },
+  {
+    "text": "承担",
+    "startMs": 75837,
+    "endMs": 76262
+  },
+  {
+    "text": "不",
+    "startMs": 76262,
+    "endMs": 76387
+  },
+  {
+    "text": "起",
+    "startMs": 76387,
+    "endMs": 76625
+  },
+  {
+    "text": "这",
+    "startMs": 76937,
+    "endMs": 77087
+  },
+  {
+    "text": "费用",
+    "startMs": 77087,
+    "endMs": 77387
+  },
+  {
+    "text": "太",
+    "startMs": 77400,
+    "endMs": 77775
+  },
+  {
+    "text": "高",
+    "startMs": 77775,
+    "endMs": 78000
+  },
+  {
+    "text": "了",
+    "startMs": 78000,
+    "endMs": 78100
+  },
+  {
+    "text": "又",
+    "startMs": 78325,
+    "endMs": 78512
+  },
+  {
+    "text": "给",
+    "startMs": 78512,
+    "endMs": 78650
+  },
+  {
+    "text": "我",
+    "startMs": 78662,
+    "endMs": 78825
+  },
+  {
+    "text": "免",
+    "startMs": 78825,
+    "endMs": 79012
+  },
+  {
+    "text": "了",
+    "startMs": 79012,
+    "endMs": 79100
+  },
+  {
+    "text": "两万五",
+    "startMs": 79112,
+    "endMs": 79737
+  },
+  {
+    "text": "这",
+    "startMs": 80312,
+    "endMs": 80487
+  },
+  {
+    "text": "还",
+    "startMs": 80487,
+    "endMs": 80650
+  },
+  {
+    "text": "不是",
+    "startMs": 80650,
+    "endMs": 80987
+  },
+  {
+    "text": "国家",
+    "startMs": 81012,
+    "endMs": 81337
+  },
+  {
+    "text": "层面",
+    "startMs": 81350,
+    "endMs": 81687
+  },
+  {
+    "text": "的",
+    "startMs": 81687,
+    "endMs": 81750
+  },
+  {
+    "text": "上限",
+    "startMs": 81762,
+    "endMs": 82187
+  },
+  {
+    "text": "是",
+    "startMs": 82500,
+    "endMs": 82737
+  },
+  {
+    "text": "文部科学省",
+    "startMs": 82750,
+    "endMs": 83762
+  },
+  {
+    "text": "共济",
+    "startMs": 83787,
+    "endMs": 84162
+  },
+  {
+    "text": "组合",
+    "startMs": 84175,
+    "endMs": 84600
+  },
+  {
+    "text": "的",
+    "startMs": 84600,
+    "endMs": 84662
+  },
+  {
+    "text": "上限",
+    "startMs": 84675,
+    "endMs": 85087
+  },
+  {
+    "text": "2",
+    "startMs": 85662,
+    "endMs": 85950
+  },
+  {
+    "text": "关于",
+    "startMs": 86250,
+    "endMs": 86537
+  },
+  {
+    "text": "日本",
+    "startMs": 86550,
+    "endMs": 86875
+  },
+  {
+    "text": "的",
+    "startMs": 86875,
+    "endMs": 86937
+  },
+  {
+    "text": "学生",
+    "startMs": 86950,
+    "endMs": 87375
+  },
+  {
+    "text": "真的是你",
+    "startMs": 87575,
+    "endMs": 88200
+  },
+  {
+    "text": "想",
+    "startMs": 88212,
+    "endMs": 88450
+  },
+  {
+    "text": "做",
+    "startMs": 88450,
+    "endMs": 88700
+  },
+  {
+    "text": "什么",
+    "startMs": 88700,
+    "endMs": 88987
+  },
+  {
+    "text": "就",
+    "startMs": 89100,
+    "endMs": 89287
+  },
+  {
+    "text": "做",
+    "startMs": 89287,
+    "endMs": 89537
+  },
+  {
+    "text": "什么",
+    "startMs": 89537,
+    "endMs": 89875
+  },
+  {
+    "text": "很多",
+    "startMs": 90437,
+    "endMs": 90887
+  },
+  {
+    "text": "天马行空",
+    "startMs": 90912,
+    "endMs": 91675
+  },
+  {
+    "text": "的",
+    "startMs": 91675,
+    "endMs": 91775
+  },
+  {
+    "text": "东西",
+    "startMs": 91775,
+    "endMs": 92137
+  },
+  {
+    "text": "或者",
+    "startMs": 92400,
+    "endMs": 92700
+  },
+  {
+    "text": "说",
+    "startMs": 92700,
+    "endMs": 92925
+  },
+  {
+    "text": "基础",
+    "startMs": 93075,
+    "endMs": 93462
+  },
+  {
+    "text": "到",
+    "startMs": 93462,
+    "endMs": 93612
+  },
+  {
+    "text": "不能",
+    "startMs": 93625,
+    "endMs": 93962
+  },
+  {
+    "text": "再",
+    "startMs": 93962,
+    "endMs": 94125
+  },
+  {
+    "text": "基础",
+    "startMs": 94125,
+    "endMs": 94562
+  },
+  {
+    "text": "的",
+    "startMs": 94562,
+    "endMs": 94650
+  },
+  {
+    "text": "东西",
+    "startMs": 94650,
+    "endMs": 95012
+  },
+  {
+    "text": "他们",
+    "startMs": 95250,
+    "endMs": 95512
+  },
+  {
+    "text": "都",
+    "startMs": 95525,
+    "endMs": 95812
+  },
+  {
+    "text": "能",
+    "startMs": 95812,
+    "endMs": 95987
+  },
+  {
+    "text": "理直气壮",
+    "startMs": 96000,
+    "endMs": 96875
+  },
+  {
+    "text": "的",
+    "startMs": 96875,
+    "endMs": 96987
+  },
+  {
+    "text": "做",
+    "startMs": 96987,
+    "endMs": 97212
+  },
+  {
+    "text": "要",
+    "startMs": 97775,
+    "endMs": 97950
+  },
+  {
+    "text": "知道",
+    "startMs": 97950,
+    "endMs": 98262
+  },
+  {
+    "text": "这些",
+    "startMs": 98375,
+    "endMs": 98725
+  },
+  {
+    "text": "东西",
+    "startMs": 98725,
+    "endMs": 99087
+  },
+  {
+    "text": "根本",
+    "startMs": 99212,
+    "endMs": 99650
+  },
+  {
+    "text": "不能",
+    "startMs": 99650,
+    "endMs": 99912
+  },
+  {
+    "text": "发",
+    "startMs": 99925,
+    "endMs": 100125
+  },
+  {
+    "text": "什么",
+    "startMs": 100125,
+    "endMs": 100337
+  },
+  {
+    "text": "所谓",
+    "startMs": 100350,
+    "endMs": 100737
+  },
+  {
+    "text": "的",
+    "startMs": 100737,
+    "endMs": 100800
+  },
+  {
+    "text": "好",
+    "startMs": 100825,
+    "endMs": 101025
+  },
+  {
+    "text": "期刊",
+    "startMs": 101025,
+    "endMs": 101475
+  },
+  {
+    "text": "甚至",
+    "startMs": 101687,
+    "endMs": 102000
+  },
+  {
+    "text": "发",
+    "startMs": 102012,
+    "endMs": 102250
+  },
+  {
+    "text": "不了",
+    "startMs": 102250,
+    "endMs": 102537
+  },
+  {
+    "text": "但是",
+    "startMs": 103087,
+    "endMs": 103387
+  },
+  {
+    "text": "日本",
+    "startMs": 103400,
+    "endMs": 103662
+  },
+  {
+    "text": "有",
+    "startMs": 103675,
+    "endMs": 103837
+  },
+  {
+    "text": "一",
+    "startMs": 103837,
+    "endMs": 103950
+  },
+  {
+    "text": "句",
+    "startMs": 103950,
+    "endMs": 104087
+  },
+  {
+    "text": "大家",
+    "startMs": 104112,
+    "endMs": 104425
+  },
+  {
+    "text": "都",
+    "startMs": 104425,
+    "endMs": 104662
+  },
+  {
+    "text": "念叨",
+    "startMs": 104662,
+    "endMs": 105025
+  },
+  {
+    "text": "的",
+    "startMs": 105025,
+    "endMs": 105112
+  },
+  {
+    "text": "诗",
+    "startMs": 105112,
+    "endMs": 105375
+  },
+  {
+    "text": "違",
+    "startMs": 105712,
+    "endMs": 105962
+  },
+  {
+    "text": "大家",
+    "startMs": 106525,
+    "endMs": 106825
+  },
+  {
+    "text": "都",
+    "startMs": 106825,
+    "endMs": 107050
+  },
+  {
+    "text": "不",
+    "startMs": 107050,
+    "endMs": 107187
+  },
+  {
+    "text": "一样",
+    "startMs": 107187,
+    "endMs": 107487
+  },
+  {
+    "text": "大家",
+    "startMs": 107800,
+    "endMs": 108112
+  },
+  {
+    "text": "都",
+    "startMs": 108112,
+    "endMs": 108337
+  },
+  {
+    "text": "好",
+    "startMs": 108337,
+    "endMs": 108675
+  },
+  {
+    "text": "就",
+    "startMs": 109237,
+    "endMs": 109487
+  },
+  {
+    "text": "凭",
+    "startMs": 109487,
+    "endMs": 109662
+  },
+  {
+    "text": "这",
+    "startMs": 109687,
+    "endMs": 109825
+  },
+  {
+    "text": "一句话",
+    "startMs": 109825,
+    "endMs": 110337
+  },
+  {
+    "text": "德岛大学",
+    "startMs": 110600,
+    "endMs": 111287
+  },
+  {
+    "text": "的",
+    "startMs": 111287,
+    "endMs": 111387
+  },
+  {
+    "text": "中村修二",
+    "startMs": 111412,
+    "endMs": 112087
+  },
+  {
+    "text": "就",
+    "startMs": 112200,
+    "endMs": 112412
+  },
+  {
+    "text": "不",
+    "startMs": 112425,
+    "endMs": 112637
+  },
+  {
+    "text": "学",
+    "startMs": 112637,
+    "endMs": 112812
+  },
+  {
+    "text": "自己",
+    "startMs": 112812,
+    "endMs": 113062
+  },
+  {
+    "text": "专业",
+    "startMs": 113075,
+    "endMs": 113400
+  },
+  {
+    "text": "非得",
+    "startMs": 113600,
+    "endMs": 113987
+  },
+  {
+    "text": "倒腾",
+    "startMs": 114000,
+    "endMs": 114337
+  },
+  {
+    "text": "蓝光",
+    "startMs": 114337,
+    "endMs": 114750
+  },
+  {
+    "text": "LED",
+    "startMs": 114862,
+    "endMs": 115262
+  },
+  {
+    "text": "所以",
+    "startMs": 115837,
+    "endMs": 116175
+  },
+  {
+    "text": "综上所述",
+    "startMs": 116200,
+    "endMs": 117050
+  },
+  {
+    "text": "个人",
+    "startMs": 117237,
+    "endMs": 117550
+  },
+  {
+    "text": "感觉",
+    "startMs": 117550,
+    "endMs": 117962
+  },
+  {
+    "text": "日本",
+    "startMs": 118062,
+    "endMs": 118450
+  },
+  {
+    "text": "的",
+    "startMs": 118450,
+    "endMs": 118550
+  },
+  {
+    "text": "长处",
+    "startMs": 118562,
+    "endMs": 119162
+  },
+  {
+    "text": "在于",
+    "startMs": 119175,
+    "endMs": 119562
+  },
+  {
+    "text": "提供",
+    "startMs": 120137,
+    "endMs": 120562
+  },
+  {
+    "text": "全民",
+    "startMs": 120587,
+    "endMs": 121025
+  },
+  {
+    "text": "超",
+    "startMs": 121037,
+    "endMs": 121300
+  },
+  {
+    "text": "高",
+    "startMs": 121300,
+    "endMs": 121475
+  },
+  {
+    "text": "底线",
+    "startMs": 121487,
+    "endMs": 121837
+  },
+  {
+    "text": "的",
+    "startMs": 121837,
+    "endMs": 121937
+  },
+  {
+    "text": "基础",
+    "startMs": 121937,
+    "endMs": 122275
+  },
+  {
+    "text": "上",
+    "startMs": 122275,
+    "endMs": 122462
+  },
+  {
+    "text": "赋予",
+    "startMs": 122700,
+    "endMs": 123012
+  },
+  {
+    "text": "个人",
+    "startMs": 123037,
+    "endMs": 123325
+  },
+  {
+    "text": "发展",
+    "startMs": 123325,
+    "endMs": 123700
+  },
+  {
+    "text": "的",
+    "startMs": 123700,
+    "endMs": 123775
+  },
+  {
+    "text": "自由",
+    "startMs": 123787,
+    "endMs": 124150
+  },
+  {
+    "text": "这",
+    "startMs": 124725,
+    "endMs": 124937
+  },
+  {
+    "text": "可能",
+    "startMs": 124937,
+    "endMs": 125250
+  },
+  {
+    "text": "就",
+    "startMs": 125262,
+    "endMs": 125487
+  },
+  {
+    "text": "是",
+    "startMs": 125487,
+    "endMs": 125625
+  },
+  {
+    "text": "原因",
+    "startMs": 125650,
+    "endMs": 125987
+  },
+  {
+    "text": "之一",
+    "startMs": 126000,
+    "endMs": 126375
+  }
+]

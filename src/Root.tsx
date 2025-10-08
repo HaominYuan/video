@@ -10,24 +10,24 @@ export const RemotionRoot: React.FC = () => {
         <Composition
             id="Audiogram"
             component={Audiogram}
-            width={1080}
+            width={1920}
             height={1080}
             schema={audiogramSchema}
             defaultProps={{
                 // audio settings
                 audioOffsetInSeconds: 0,
                 // audioFileUrl: staticFile("audio.wav"),
-                audioFileUrl: staticFile("test.mp3"),
                 // podcast data
-                coverImageUrl: staticFile("podcast-cover.jpeg"),
                 titleText: "日本科学家诺贝尔奖数量亚洲第一，可能与哪些因素有关？",
-                titleColor: "rgba(245, 186, 66, 0.93)",
+                titleColor: "rgba(238, 163, 24, 1)",
                 // captions settings
                 captions: null,
                 // captionsFileName: staticFile("captions.json"),
-                captionsFileName: staticFile("example.json"),
+                audioFileUrl: staticFile("1.mp3"),
+
+                captionsFileName: staticFile("2.json"),
                 onlyDisplayCurrentSentence: false,
-                captionsTextColor: "rgba(255, 255, 255, 0.93)",
+                captionsTextColor: "rgba(0, 0, 0, 0.7)",
             }}
             // Determine the length of the video based on the duration of the audio file
             // 下面这个函数主要用于渲染前计算内容的参数
@@ -47,7 +47,7 @@ export const RemotionRoot: React.FC = () => {
                 // 返回视频的长度和一些参数
                 return {
                     durationInFrames: Math.floor(
-                        (slowDurationInSeconds - props.audioOffsetInSeconds) * FPS,
+                        (slowDurationInSeconds + 1 - props.audioOffsetInSeconds) * FPS,
                     ),
                     props: {
                         ...props,
