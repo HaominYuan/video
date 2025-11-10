@@ -3,11 +3,13 @@ import { AbsoluteFill, Audio, Sequence, useVideoConfig } from "remotion";
 
 import { PaginatedCaptions } from "./Captions";
 import {
+    ANSWER_COLOR,
     BASE_SIZE,
     CAPTIONS_FONT_SIZE,
     CAPTIONS_FONT_WEIGHT,
     LINE_HEIGHT,
     LINES_PER_PAGE,
+    QUESTION_COLOR,
 } from "./constants";
 import { FONT_FAMILY } from "./font";
 import { WaitForFonts } from "./WaitForFonts";
@@ -19,24 +21,20 @@ export const Audiogram: React.FC<AudiogramCompositionSchemaType> = ({
     audioAnswerFileUrl,
     answerInSeconds,
     audioThanksFileUrl,
-    thanksInSeconds,
-    titleText,
-    titleColor,
-    captionsTextColor,
+    questionText,
     onlyDisplayCurrentSentence,
-    captions,
+    answerCaptions,
 
 }) => {
     // 获取这个ID视频的参数
     const { durationInFrames, fps, width } = useVideoConfig();
 
-    if (!captions) {
+    if (!answerCaptions) {
         throw new Error(
             "subtitles should have been provided through calculateMetadata",
         );
     }
 
-    // 计算视频的偏移量
 
     // 文本框大小
     const textBoxWidth = width - BASE_SIZE * 2;
@@ -71,7 +69,7 @@ export const Audiogram: React.FC<AudiogramCompositionSchemaType> = ({
 
                         lineHeight: "1.25",
                         fontWeight: 800,
-                        color: titleColor,
+                        color: QUESTION_COLOR,
                         fontSize: "144px",
                     }}
                 >
@@ -82,7 +80,7 @@ export const Audiogram: React.FC<AudiogramCompositionSchemaType> = ({
 
                         }}
                     >
-                        {titleText}
+                        {questionText}
                     </div>
                 </div>
             </Sequence >
@@ -115,11 +113,11 @@ export const Audiogram: React.FC<AudiogramCompositionSchemaType> = ({
                             style={{
                                 lineHeight: "1.25",
                                 fontWeight: 800,
-                                color: titleColor,
+                                color: QUESTION_COLOR,
                                 fontSize: "72px",
                             }}
                         >
-                            {titleText}
+                            {questionText}
                         </div>
                     </div>
 
@@ -139,11 +137,11 @@ export const Audiogram: React.FC<AudiogramCompositionSchemaType> = ({
                             }}
                         >
                             <PaginatedCaptions
-                                captions={captions}
+                                captions={answerCaptions}
                                 startFrame={0}
                                 endFrame={durationInFrames}
                                 linesPerPage={LINES_PER_PAGE}
-                                subtitlesTextColor={captionsTextColor}
+                                subtitlesTextColor={ANSWER_COLOR}
                                 onlyDisplayCurrentSentence={onlyDisplayCurrentSentence}
                                 textBoxWidth={textBoxWidth}
                             />
@@ -166,7 +164,7 @@ export const Audiogram: React.FC<AudiogramCompositionSchemaType> = ({
                         fontFamily: FONT_FAMILY,
                         lineHeight: "1.25",
                         fontWeight: 800,
-                        color: titleColor,
+                        color: QUESTION_COLOR,
                         fontSize: "144px",
                     }}
                 >
