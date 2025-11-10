@@ -14,13 +14,18 @@ import { WaitForFonts } from "./WaitForFonts";
 import { AudiogramCompositionSchemaType } from "./schema";
 
 export const Audiogram: React.FC<AudiogramCompositionSchemaType> = ({
-    audioFileUrl,
+    audioQuestionFileUrl,
+    questionInSeconds,
+    audioAnswerFileUrl,
+    answerInSeconds,
+    audioThanksFileUrl,
+    thanksInSeconds,
     titleText,
     titleColor,
     captionsTextColor,
     onlyDisplayCurrentSentence,
-    audioOffsetInSeconds,
     captions,
+
 }) => {
     // 获取这个ID视频的参数
     const { durationInFrames, fps, width } = useVideoConfig();
@@ -32,7 +37,6 @@ export const Audiogram: React.FC<AudiogramCompositionSchemaType> = ({
     }
 
     // 计算视频的偏移量
-    const audioOffsetInFrames = Math.round(audioOffsetInSeconds * fps);
 
     // 文本框大小
     const textBoxWidth = width - BASE_SIZE * 2;
@@ -51,7 +55,8 @@ export const Audiogram: React.FC<AudiogramCompositionSchemaType> = ({
         //     flexDirection: 'column',
         // };
         <AbsoluteFill>
-            <Sequence durationInFrames={1 * fps}>
+            <Sequence durationInFrames={questionInSeconds * fps}>
+                <Audio pauseWhenBuffering src={audioQuestionFileUrl} />
                 <div
                     style={{
                         display: "flex",
@@ -63,15 +68,18 @@ export const Audiogram: React.FC<AudiogramCompositionSchemaType> = ({
                         padding: "48px",
                         backgroundColor: "white",
                         fontFamily: FONT_FAMILY,
+
+                        lineHeight: "1.25",
+                        fontWeight: 800,
+                        color: titleColor,
+                        fontSize: "144px",
                     }}
                 >
+
                     <div
                         style={{
                             width: "50%",
-                            lineHeight: "1.25",
-                            fontWeight: 800,
-                            color: titleColor,
-                            fontSize: "108px",
+
                         }}
                     >
                         {titleText}
@@ -81,9 +89,9 @@ export const Audiogram: React.FC<AudiogramCompositionSchemaType> = ({
 
 
             {/* 这里的from是指这个组件从第几帧开始渲染 用于设置从音频的第几帧开始播放 不需要剪切视频了 */}
-            <Sequence from={1 * fps}>
+            <Sequence from={questionInSeconds * fps} durationInFrames={answerInSeconds * fps}>
                 {/* 播放音频 */}
-                <Audio pauseWhenBuffering src={audioFileUrl} />
+                <Audio pauseWhenBuffering src={audioAnswerFileUrl} />
                 <div
                     style={{
                         display: "flex",
@@ -102,13 +110,7 @@ export const Audiogram: React.FC<AudiogramCompositionSchemaType> = ({
                             alignItems: "center",
                         }}
                     >
-                        {/* <Img
-                            style={{
-                                borderRadius: "6px",
-                                maxHeight: "250px",
-                            }}
-                            src={coverImageUrl}
-                        /> */}
+
                         <div
                             style={{
                                 lineHeight: "1.25",
@@ -138,8 +140,8 @@ export const Audiogram: React.FC<AudiogramCompositionSchemaType> = ({
                         >
                             <PaginatedCaptions
                                 captions={captions}
-                                startFrame={audioOffsetInFrames}
-                                endFrame={audioOffsetInFrames + durationInFrames}
+                                startFrame={0}
+                                endFrame={durationInFrames}
                                 linesPerPage={LINES_PER_PAGE}
                                 subtitlesTextColor={captionsTextColor}
                                 onlyDisplayCurrentSentence={onlyDisplayCurrentSentence}
@@ -147,6 +149,28 @@ export const Audiogram: React.FC<AudiogramCompositionSchemaType> = ({
                             />
                         </div>
                     </WaitForFonts>
+                </div>
+            </Sequence>
+            <Sequence from={(questionInSeconds + answerInSeconds) * fps}>
+                <Audio pauseWhenBuffering src={audioThanksFileUrl} />
+                <div
+                    style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        justifyContent: "center",
+                        alignItems: "center",
+                        width: "100%",
+                        height: "100%",
+                        padding: "48px",
+                        backgroundColor: "white",
+                        fontFamily: FONT_FAMILY,
+                        lineHeight: "1.25",
+                        fontWeight: 800,
+                        color: titleColor,
+                        fontSize: "144px",
+                    }}
+                >
+                    感谢观看
                 </div>
             </Sequence>
 

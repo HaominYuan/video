@@ -1,0 +1,62 @@
+[
+  {
+    "text": "日本",
+    "startMs": 41,
+    "endMs": 302
+  },
+  {
+    "text": "科学家",
+    "startMs": 312,
+    "endMs": 750
+  },
+  {
+    "text": "诺贝尔",
+    "startMs": 770,
+    "endMs": 1124
+  },
+  {
+    "text": "奖",
+    "startMs": 1125,
+    "endMs": 1322
+  },
+  {
+    "text": "数量",
+    "startMs": 1333,
+    "endMs": 1645
+  },
+  {
+    "text": "亚洲",
+    "startMs": 1666,
+    "endMs": 1958
+  },
+  {
+    "text": "第一",
+    "startMs": 1968,
+    "endMs": 2239
+  },
+  {
+    "text": "可能",
+    "startMs": 2437,
+    "endMs": 2687
+  },
+  {
+    "text": "与",
+    "startMs": 2697,
+    "endMs": 2822
+  },
+  {
+    "text": "哪些",
+    "startMs": 2833,
+    "endMs": 3208
+  },
+  {
+    "text": "因素",
+    "startMs": 3218,
+    "endMs": 3500
+  },
+  {
+    "text": "有关",
+    "startMs": 3510,
+    "endMs": 3864
+  }
+]

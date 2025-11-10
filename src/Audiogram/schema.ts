@@ -15,8 +15,12 @@ export const audiogramSchema = z.object({
     captionsTextColor: zColor(),
     onlyDisplayCurrentSentence: z.boolean(),
     // audio settings
-    audioFileUrl: z.string(),
-    audioOffsetInSeconds: z.number().min(0),
+    audioAnswerFileUrl: z.string(),
+    audioQuestionFileUrl: z.string(),
+    questionInSeconds: z.number().min(0),
+    answerInSeconds: z.number().min(0),
+    audioThanksFileUrl: z.string(),
+    thanksInSeconds: z.number().min(0),
 });
 
 export type AudiogramCompositionSchemaType = z.infer<typeof audiogramSchema> & {

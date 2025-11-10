@@ -14,18 +14,16 @@ export const RemotionRoot: React.FC = () => {
             height={1080}
             schema={audiogramSchema}
             defaultProps={{
-                // audio settings
-                audioOffsetInSeconds: 0,
-                // audioFileUrl: staticFile("audio.wav"),
-                // podcast data
                 titleText: "日本科学家诺贝尔奖数量亚洲第一，可能与哪些因素有关？",
                 titleColor: "rgba(238, 163, 24, 1)",
-                // captions settings
                 captions: null,
-                // captionsFileName: staticFile("captions.json"),
-                audioFileUrl: staticFile("1.mp3"),
-
-                captionsFileName: staticFile("2.json"),
+                audioQuestionFileUrl: staticFile("question.mp3"),
+                questionInSeconds: 0,
+                audioAnswerFileUrl: staticFile("answer.mp3"),
+                captionsFileName: staticFile("answer.json"),
+                answerInSeconds: 0,
+                audioThanksFileUrl: staticFile("thanks.mp3"),
+                thanksInSeconds: 0,
                 onlyDisplayCurrentSentence: false,
                 captionsTextColor: "rgba(0, 0, 0, 0.7)",
             }}
@@ -35,23 +33,34 @@ export const RemotionRoot: React.FC = () => {
                 // 获取文字
                 const captions = await getSubtitles(props.captionsFileName);
                 // 获取音频的长度
-                const { slowDurationInSeconds } = await parseMedia({
-                    src: props.audioFileUrl,
+                const { slowDurationInSeconds: questionInSeconds } = await parseMedia({
+                    src: props.audioQuestionFileUrl,
                     acknowledgeRemotionLicense: true,
                     fields: {
                         slowDurationInSeconds: true,
                     },
                 });
 
-                
+                const { slowDurationInSeconds: answerInSeconds } = await parseMedia({
+                    src: props.audioAnswerFileUrl,
+                    acknowledgeRemotionLicense: true,
+                    fields: {
+                        slowDurationInSeconds: true,
+                    },
+                });
+
+
                 // 返回视频的长度和一些参数
                 return {
                     durationInFrames: Math.floor(
-                        (slowDurationInSeconds + 1 - props.audioOffsetInSeconds) * FPS,
+                        (answerInSeconds + questionInSeconds + 1) * FPS,
                     ),
+
                     props: {
                         ...props,
                         captions,
+                        questionInSeconds,
+                        answerInSeconds
                     },
                     fps: FPS,
                 };
