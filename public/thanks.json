@@ -1,22 +1,42 @@
 [
   {
     "text": "感谢",
-    "startMs": 33,
-    "endMs": 349
+    "startMs": 91,
+    "endMs": 435
   },
   {
     "text": "您",
-    "startMs": 350,
-    "endMs": 458
+    "startMs": 435,
+    "endMs": 539
   },
   {
     "text": "的",
-    "startMs": 458,
-    "endMs": 533
+    "startMs": 539,
+    "endMs": 612
   },
   {
-    "text": "观看",
-    "startMs": 541,
-    "endMs": 841
+    "text": "收听\n",
+    "startMs": 622,
+    "endMs": 987
+  },
+  {
+    "text": "欢迎",
+    "startMs": 1081,
+    "endMs": 1466
+  },
+  {
+    "text": "点赞",
+    "startMs": 1477,
+    "endMs": 1862
+  },
+  {
+    "text": "评论",
+    "startMs": 1883,
+    "endMs": 2164
+  },
+  {
+    "text": "转发",
+    "startMs": 2175,
+    "endMs": 2560
   }
 ]

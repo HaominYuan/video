@@ -16,6 +16,7 @@ export const getSubtitlesFromSrt = async (src: string) => {
     });
 };
 
+
 export const getSubtitlesFromJson = async (src: string) => {
     const res = await fetch(src);
     const captions = (await res.json()) as Caption[];

@@ -170,7 +170,8 @@ export const Audiogram: React.FC<AudiogramCompositionSchemaType> = ({
                         fontSize: "144px",
                     }}
                 >
-                    感谢观看
+                    <span>感谢您的收听</span>
+                    <span>欢迎点赞评论转发</span>
                 </div>
             </Sequence>
 

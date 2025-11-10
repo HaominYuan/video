@@ -7,7 +7,12 @@ export const audiogramSchema = z.object({
     titleText: z.string(),
     titleColor: zColor(),
     // captions settings
-    captionsFileName: z
+    questionCaptionsFileName: z
+        .string()
+        .refine((s) => s.endsWith(".srt") || s.endsWith(".json"), {
+            message: "Subtitles file must be a .srt or .json file",
+        }),
+    answerCaptionsFileName: z
         .string()
         .refine((s) => s.endsWith(".srt") || s.endsWith(".json"), {
             message: "Subtitles file must be a .srt or .json file",

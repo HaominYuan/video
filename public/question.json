@@ -1,62 +1,87 @@
 [
   {
-    "text": "日本",
-    "startMs": 41,
-    "endMs": 302
+    "text": "在",
+    "startMs": 91,
+    "endMs": 289
   },
   {
-    "text": "科学家",
-    "startMs": 312,
-    "endMs": 750
+    "text": "白",
+    "startMs": 300,
+    "endMs": 466
   },
   {
-    "text": "诺贝尔",
-    "startMs": 770,
-    "endMs": 1124
+    "text": "右",
+    "startMs": 466,
+    "endMs": 612
   },
   {
-    "text": "奖",
-    "startMs": 1125,
-    "endMs": 1322
+    "text": "的",
+    "startMs": 612,
+    "endMs": 685
   },
   {
-    "text": "数量",
-    "startMs": 1333,
-    "endMs": 1645
+    "text": "世界观",
+    "startMs": 706,
+    "endMs": 1112
   },
   {
-    "text": "亚洲",
-    "startMs": 1666,
-    "endMs": 1958
+    "text": "里",
+    "startMs": 1112,
+    "endMs": 1237
   },
   {
-    "text": "第一",
-    "startMs": 1968,
-    "endMs": 2239
+    "text": "华人",
+    "startMs": 1487,
+    "endMs": 1872
   },
   {
-    "text": "可能",
-    "startMs": 2437,
-    "endMs": 2687
+    "text": "真",
+    "startMs": 1883,
+    "endMs": 2029
   },
   {
-    "text": "与",
-    "startMs": 2697,
-    "endMs": 2822
+    "text": "的",
+    "startMs": 2029,
+    "endMs": 2122
   },
   {
-    "text": "哪些",
-    "startMs": 2833,
-    "endMs": 3208
+    "text": "比",
+    "startMs": 2133,
+    "endMs": 2279
   },
   {
-    "text": "因素",
-    "startMs": 3218,
-    "endMs": 3500
+    "text": "其他",
+    "startMs": 2279,
+    "endMs": 2643
   },
   {
-    "text": "有关",
-    "startMs": 3510,
-    "endMs": 3864
+    "text": "种族",
+    "startMs": 2654,
+    "endMs": 2956
+  },
+  {
+    "text": "要",
+    "startMs": 2977,
+    "endMs": 3102
+  },
+  {
+    "text": "高",
+    "startMs": 3102,
+    "endMs": 3279
+  },
+  {
+    "text": "一",
+    "startMs": 3279,
+    "endMs": 3352
+  },
+  {
+    "text": "档",
+    "startMs": 3352,
+    "endMs": 3529
+  },
+  {
+    "text": "吗",
+    "startMs": 3529,
+    "endMs": 3674
   }
 ]

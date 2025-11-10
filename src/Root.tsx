@@ -14,13 +14,14 @@ export const RemotionRoot: React.FC = () => {
             height={1080}
             schema={audiogramSchema}
             defaultProps={{
-                titleText: "日本科学家诺贝尔奖数量亚洲第一，可能与哪些因素有关？",
+                titleText: "title",
                 titleColor: "rgba(238, 163, 24, 1)",
                 captions: null,
                 audioQuestionFileUrl: staticFile("question.mp3"),
+                questionCaptionsFileName: staticFile("question.json"),
                 questionInSeconds: 0,
                 audioAnswerFileUrl: staticFile("answer.mp3"),
-                captionsFileName: staticFile("answer.json"),
+                answerCaptionsFileName: staticFile("answer.json"),
                 answerInSeconds: 0,
                 audioThanksFileUrl: staticFile("thanks.mp3"),
                 thanksInSeconds: 0,
@@ -30,9 +31,17 @@ export const RemotionRoot: React.FC = () => {
             // Determine the length of the video based on the duration of the audio file
             // 下面这个函数主要用于渲染前计算内容的参数
             calculateMetadata={async ({ props }) => {
-                // 获取文字
-                const captions = await getSubtitles(props.captionsFileName);
-                // 获取音频的长度
+                // 获取问题的字幕
+                const questionCaptions = await getSubtitles(props.questionCaptionsFileName);
+
+                // 将问题的字幕合并到props中
+                const question = questionCaptions.reduce((acc, curr) => {
+                    return acc + curr.text
+                }, "");
+
+                // 获取回答的字幕
+                const answerCaptions = await getSubtitles(props.answerCaptionsFileName);
+                // 获取问题音频的长度
                 const { slowDurationInSeconds: questionInSeconds } = await parseMedia({
                     src: props.audioQuestionFileUrl,
                     acknowledgeRemotionLicense: true,
@@ -41,6 +50,7 @@ export const RemotionRoot: React.FC = () => {
                     },
                 });
 
+                // 获取回答音频的长度
                 const { slowDurationInSeconds: answerInSeconds } = await parseMedia({
                     src: props.audioAnswerFileUrl,
                     acknowledgeRemotionLicense: true,
@@ -53,14 +63,15 @@ export const RemotionRoot: React.FC = () => {
                 // 返回视频的长度和一些参数
                 return {
                     durationInFrames: Math.floor(
-                        (answerInSeconds + questionInSeconds + 1) * FPS,
+                        (answerInSeconds + questionInSeconds + 3) * FPS,
                     ),
 
                     props: {
                         ...props,
-                        captions,
+                        captions: answerCaptions,
                         questionInSeconds,
-                        answerInSeconds
+                        answerInSeconds,
+                        titleText: question
                     },
                     fps: FPS,
                 };
