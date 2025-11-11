@@ -50,7 +50,6 @@ export async function getAudioPathAndCaptions(text: string) {
 
 export async function getAudioPathAndCaptionsFake(text: string) {
     const voice = "zh-CN-YunjianNeural"
-    const BASEPATH = "C:\\Users\\yuanhm\\Desktop\\video\\public\\"
 
     const tts = new EdgeTTS(text, voice, {
         rate: '+20%',
@@ -61,11 +60,6 @@ export async function getAudioPathAndCaptionsFake(text: string) {
 
     // const audioFilePath = URL.createObjectURL(audio);
     const audioFilePath = await uploadFile(audio, filename);
-
-
-
-
-
 
     const srtContent = createSRT(subtitle);
     const parser = new srtParser2();
