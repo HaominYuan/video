@@ -37,10 +37,19 @@ const calculateMetadata = async ({ props }) => {
             },
         });
 
+    const { slowDurationInSeconds: thanksInSeconds } = await parseMedia({
+        src: staticFile("thanks.mp3"),
+        acknowledgeRemotionLicense: true,
+        fields: {
+            slowDurationInSeconds: true,
+        },
+    });
+
+
     // 返回视频的长度和一些参数
     return {
-        durationInFrames: Math.floor(
-            (answerInSeconds + questionInSeconds + 3) * FPS,
+        durationInFrames: Math.ceil(
+            (answerInSeconds + questionInSeconds + thanksInSeconds + 10) * FPS,
         ),
 
         props: {
@@ -48,8 +57,10 @@ const calculateMetadata = async ({ props }) => {
             answerCaptions,
             questionInSeconds,
             answerInSeconds,
+            thanksInSeconds,
             audioQuestionFileUrl,
             audioAnswerFileUrl,
+            defaultOutName: props.questionText
         },
         fps: FPS,
     };
@@ -77,6 +88,7 @@ export const RemotionRoot: React.FC = () => {
                 answerInSeconds: 0,
                 audioThanksFileUrl: staticFile("thanks.mp3"),
                 onlyDisplayCurrentSentence: false,
+
             }}
             // Determine the length of the video based on the duration of the audio file
             // 下面这个函数主要用于渲染前计算内容的参数

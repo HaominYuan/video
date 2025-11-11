@@ -15,4 +15,5 @@ export type AudiogramCompositionSchemaType = z.infer<typeof audiogramSchema> & {
     onlyDisplayCurrentSentence: boolean,
     questionInSeconds: number,
     answerInSeconds: number,
+    thanksInSeconds: number,
 };

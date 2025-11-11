@@ -1,27 +1,24 @@
-import { fs } from 'fs/promises';
 import { createSRT, EdgeTTS } from "edge-tts-universal";
 import srtParser2 from "srt-parser-2";
 import { Caption } from "@remotion/captions";
 
 
-async function blobToBase64(blob: Blob) {
-    if (typeof window !== 'undefined' && typeof FileReader !== 'undefined') {
-        // Browser environment
-        return new Promise((resolve, reject) => {
-            const reader = new FileReader();
-            reader.onload = () => resolve(reader.result);
-            reader.onerror = error => reject(error);
-            reader.readAsDataURL(blob);
-        });
-    } else if (typeof Buffer !== 'undefined') {
-        // Node.js environment
-        const arrayBuffer = await blob.arrayBuffer();
-        const buffer = Buffer.from(arrayBuffer);
-        return buffer.toString('base64');
-    } else {
-        throw new Error('Unsupported environment for Blob to Base64 conversion.');
+async function uploadFile(file: Blob, filename: string): Promise<string> {
+    const formData = new FormData();
+    formData.append('mp3', file, filename);
+    const response = await fetch('http://localhost:4000/upload', {
+        method: 'POST',
+        body: formData
+    });
+
+    if (!response.ok) {
+        throw new Error('File upload failed');
     }
+
+
+    return (await response.json()).fileUrl;
 }
+
 
 export async function getAudioPathAndCaptions(text: string) {
     const voice = "zh-CN-YunjianNeural"
@@ -30,12 +27,19 @@ export async function getAudioPathAndCaptions(text: string) {
     const tts = new EdgeTTS(text, voice, {
         rate: '+20%',
     });
-    const result = await tts.synthesize()
-    const audioFilePath = URL.createObjectURL(result.audio);
+    const { audio, subtitle } = await tts.synthesize()
+    const timestamp = Date.now();
+    const filename = `audio_${timestamp}.mp3`;
+
+    // const audioFilePath = URL.createObjectURL(audio);
+    const audioFilePath = await uploadFile(audio, filename);
 
 
 
-    const srtContent = createSRT(result.subtitle);
+
+
+
+    const srtContent = createSRT(subtitle);
     const parser = new srtParser2();
     const srtArray = parser.fromSrt(srtContent);
 
@@ -59,40 +63,40 @@ export async function getAudioPathAndCaptions(text: string) {
 
 
 
-// async function convert(word: string, mp3Name: string, jsonName: string) {
-//     const voice = "zh-CN-YunjianNeural"
-//     const BASEPATH = "C:\\Users\\yuanhm\\Desktop\\video\\public\\"
-//     const OUTPUT_FILE_MP3 = BASEPATH + "\\" + mp3Name + ".mp3"
-//     const OUTPUT_FILE_JSON = BASEPATH + "\\" + jsonName + ".json"
+async function convert(word: string, mp3Name: string, capitonName: string) {
+    const voice = "zh-CN-YunjianNeural"
+    const BASEPATH = "C:\\Users\\yuanhm\\Desktop\\video\\public\\"
+    const OUTPUT_FILE_MP3 = BASEPATH + "\\" + mp3Name + ".mp3"
+    const OUTPUT_FILE_JSON = BASEPATH + "\\" + capitonName + ".json"
 
-//     const tts = new EdgeTTS(word, voice, {
-//         rate: '+20%',
-//     });
+    const tts = new EdgeTTS(word, voice, {
+        rate: '+20%',
+    });
 
-//     const result = await tts.synthesize()
+    const result = await tts.synthesize()
 
-//     const audioBuffer = Buffer.from(await result.audio.arrayBuffer());
-//     await fs.writeFile(OUTPUT_FILE_MP3, audioBuffer);
+    const audioBuffer = Buffer.from(await result.audio.arrayBuffer());
+    await fs.writeFile(OUTPUT_FILE_MP3, audioBuffer);
 
-//     const srtContent = createSRT(result.subtitle);
-//     const parser = new srtParser2();
-//     const srtArray = parser.fromSrt(srtContent);
+    const srtContent = createSRT(result.subtitle);
+    const parser = new srtParser2();
+    const srtArray = parser.fromSrt(srtContent);
 
-//     const data = srtArray.map(({ text, startSeconds, endSeconds }: {
-//         text: string,
-//         startSeconds: number,
-//         endSeconds: number
-//     }
-//     ) => {
-//         return {
-//             text,
-//             startMs: startSeconds * 1000,
-//             endMs: endSeconds * 1000,
-//         }
-//     })
+    const data = srtArray.map(({ text, startSeconds, endSeconds }: {
+        text: string,
+        startSeconds: number,
+        endSeconds: number
+    }
+    ) => {
+        return {
+            text,
+            startMs: startSeconds * 1000,
+            endMs: endSeconds * 1000,
+        }
+    })
 
-//     fs.writeFile(OUTPUT_FILE_JSON, JSON.stringify(data, null, 2));
-// }
+    fs.writeFile(OUTPUT_FILE_JSON, JSON.stringify(data, null, 2));
+}
 
 
 // async function readFile(path: string) {

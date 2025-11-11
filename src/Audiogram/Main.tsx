@@ -1,5 +1,5 @@
 import React from "react";
-import { AbsoluteFill, Audio, Sequence, useVideoConfig } from "remotion";
+import { AbsoluteFill, Audio, Sequence, staticFile, useVideoConfig } from "remotion";
 
 import { PaginatedCaptions } from "./Captions";
 import {
@@ -24,6 +24,7 @@ export const Audiogram: React.FC<AudiogramCompositionSchemaType> = ({
     questionText,
     onlyDisplayCurrentSentence,
     answerCaptions,
+    thanksInSeconds,
 
 }) => {
     // 获取这个ID视频的参数
@@ -88,7 +89,6 @@ export const Audiogram: React.FC<AudiogramCompositionSchemaType> = ({
 
             {/* 这里的from是指这个组件从第几帧开始渲染 用于设置从音频的第几帧开始播放 不需要剪切视频了 */}
             <Sequence from={questionInSeconds * fps} durationInFrames={answerInSeconds * fps}>
-                {/* 播放音频 */}
                 <Audio pauseWhenBuffering src={audioAnswerFileUrl} />
                 <div
                     style={{
@@ -149,7 +149,7 @@ export const Audiogram: React.FC<AudiogramCompositionSchemaType> = ({
                     </WaitForFonts>
                 </div>
             </Sequence>
-            <Sequence from={(questionInSeconds + answerInSeconds) * fps}>
+            <Sequence from={(questionInSeconds + answerInSeconds) * fps} durationInFrames={thanksInSeconds * fps}>
                 <Audio pauseWhenBuffering src={audioThanksFileUrl} />
                 <div
                     style={{
