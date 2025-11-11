@@ -21,6 +21,34 @@ async function uploadFile(file: Blob, filename: string): Promise<string> {
 
 
 export async function getAudioPathAndCaptions(text: string) {
+    const myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/json");
+
+    const raw = JSON.stringify({
+        text
+    });
+
+    const requestOptions = {
+        method: 'POST',
+        headers: myHeaders,
+        body: raw,
+        redirect: 'follow'
+    };
+
+    const { audioFilePath, captions }: {
+        audioFilePath: string,
+        captions: Caption[]
+    } = await fetch("http://localhost:4000/generate", requestOptions)
+        .then(response => response.json())
+
+
+    return { audioFilePath, captions };
+}
+
+
+
+
+export async function getAudioPathAndCaptionsFake(text: string) {
     const voice = "zh-CN-YunjianNeural"
     const BASEPATH = "C:\\Users\\yuanhm\\Desktop\\video\\public\\"
 
@@ -63,40 +91,40 @@ export async function getAudioPathAndCaptions(text: string) {
 
 
 
-async function convert(word: string, mp3Name: string, capitonName: string) {
-    const voice = "zh-CN-YunjianNeural"
-    const BASEPATH = "C:\\Users\\yuanhm\\Desktop\\video\\public\\"
-    const OUTPUT_FILE_MP3 = BASEPATH + "\\" + mp3Name + ".mp3"
-    const OUTPUT_FILE_JSON = BASEPATH + "\\" + capitonName + ".json"
+// async function convert(word: string, mp3Name: string, capitonName: string) {
+//     const voice = "zh-CN-YunjianNeural"
+//     const BASEPATH = "C:\\Users\\yuanhm\\Desktop\\video\\public\\"
+//     const OUTPUT_FILE_MP3 = BASEPATH + "\\" + mp3Name + ".mp3"
+//     const OUTPUT_FILE_JSON = BASEPATH + "\\" + capitonName + ".json"
 
-    const tts = new EdgeTTS(word, voice, {
-        rate: '+20%',
-    });
+//     const tts = new EdgeTTS(word, voice, {
+//         rate: '+20%',
+//     });
 
-    const result = await tts.synthesize()
+//     const result = await tts.synthesize()
 
-    const audioBuffer = Buffer.from(await result.audio.arrayBuffer());
-    await fs.writeFile(OUTPUT_FILE_MP3, audioBuffer);
+//     const audioBuffer = Buffer.from(await result.audio.arrayBuffer());
+//     await fs.writeFile(OUTPUT_FILE_MP3, audioBuffer);
 
-    const srtContent = createSRT(result.subtitle);
-    const parser = new srtParser2();
-    const srtArray = parser.fromSrt(srtContent);
+//     const srtContent = createSRT(result.subtitle);
+//     const parser = new srtParser2();
+//     const srtArray = parser.fromSrt(srtContent);
 
-    const data = srtArray.map(({ text, startSeconds, endSeconds }: {
-        text: string,
-        startSeconds: number,
-        endSeconds: number
-    }
-    ) => {
-        return {
-            text,
-            startMs: startSeconds * 1000,
-            endMs: endSeconds * 1000,
-        }
-    })
+//     const data = srtArray.map(({ text, startSeconds, endSeconds }: {
+//         text: string,
+//         startSeconds: number,
+//         endSeconds: number
+//     }
+//     ) => {
+//         return {
+//             text,
+//             startMs: startSeconds * 1000,
+//             endMs: endSeconds * 1000,
+//         }
+//     })
 
-    fs.writeFile(OUTPUT_FILE_JSON, JSON.stringify(data, null, 2));
-}
+//     fs.writeFile(OUTPUT_FILE_JSON, JSON.stringify(data, null, 2));
+// }
 
 
 // async function readFile(path: string) {

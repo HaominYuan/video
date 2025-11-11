@@ -1,7 +1,7 @@
 import srtParser2 from 'srt-parser-2';
 import fs from 'fs/promises';
 import express from 'express'
-import path, { join } from 'path'
+import { join } from 'path'
 import cors from 'cors'
 import crypto from 'crypto';
 import { createSRT, EdgeTTS } from 'edge-tts-universal';
@@ -13,10 +13,10 @@ function sha256Hash(data: string) {
 async function checkFileExists(filePath: string) {
     try {
         await fs.access(filePath);
-        console.log(`文件 "${filePath}" 存在`);
+        // console.log(`文件 "${filePath}" 存在`);
         return true;
     } catch (error) {
-        console.error(`文件 "${filePath}" 不存在或无权限: ${error.message}`);
+        // console.error(`文件 "${filePath}" 不存在或无权限: ${error.message}`);
         return false;
     }
 }
@@ -51,7 +51,7 @@ app.post('/generate', async (req, res) => {
         })
 
         res.json({
-            audioFilePath: "http://localhost:4000/static/${hashData}.mp3",
+            audioFilePath: `http://localhost:4000/static/${hashData}.mp3`,
             captions
         })
 
