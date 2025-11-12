@@ -1,5 +1,5 @@
 import React from "react";
-import { AbsoluteFill, Audio, Sequence, staticFile, useVideoConfig } from "remotion";
+import { AbsoluteFill, Audio, Sequence, useVideoConfig } from "remotion";
 
 import { PaginatedCaptions } from "./Captions";
 import {

@@ -20,16 +20,16 @@ export const Word: React.FC<{
         },
     );
 
-    const translateY = interpolate(
-        frame,
-        [msToFrame(item.startMs), msToFrame(item.startMs) + 10],
-        [0.25, 0],
-        {
-            easing: Easing.out(Easing.quad),
-            extrapolateLeft: "clamp",
-            extrapolateRight: "clamp",
-        },
-    );
+    // const translateY = interpolate(
+    //     frame,
+    //     [msToFrame(item.startMs), msToFrame(item.startMs) + 10],
+    //     [0.25, 0],
+    //     {
+    //         easing: Easing.out(Easing.quad),
+    //         extrapolateLeft: "clamp",
+    //         extrapolateRight: "clamp",
+    //     },
+    // );
 
     const style: React.CSSProperties = useMemo(() => {
         return {
@@ -39,7 +39,7 @@ export const Word: React.FC<{
             // translate: `0 ${translateY}em`,
             color: transcriptionColor,
         };
-    }, [opacity, transcriptionColor, translateY]);
+    }, [opacity, transcriptionColor]);
 
     return <span style={style}>{item.text}</span>;
 };

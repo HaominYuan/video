@@ -1,8 +1,8 @@
 import srtParser2 from 'srt-parser-2';
 import fs from 'fs/promises';
-import express from 'express'
+import express from 'express';
 import { join } from 'path'
-import cors from 'cors'
+import cors from 'cors';
 import crypto from 'crypto';
 import { createSRT, EdgeTTS } from 'edge-tts-universal';
 
